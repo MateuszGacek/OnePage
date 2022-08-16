@@ -13,10 +13,15 @@
 		.company-name {
 			font-size: 5rem;
 		}
+		&__img {
+			background-image: url("../img/header-hero-1920.jpg");
+		}
 
 		&__text {
 			grid-row: 2/4;
 			grid-column: 1/2;
+			max-width: 960px;
+			margin-left: auto;
 			p {
 				font-size: 1.8rem;
 			}
@@ -73,7 +78,8 @@
 		padding: 1em;
 
 		&-desktop {
-			display: block;
+			display: flex;
+			justify-content: center;
 			color: colors.$white;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 		}
